@@ -1,0 +1,11 @@
+main.py notes -->
+
+we use 'from website import create_app' because our 'website' is now a package... how? 
+-> because we used __init__.py in the templates section.
+
+Therefore we can now import any other file in the main.py 
+
+views.py notes -->
+
+this file is a blueprint of our application --it has bunch of roots inside ie: urls .....we can find different views of our application in 
+different files rather than having them to find in one file(because it contains the urls to go to those views).
