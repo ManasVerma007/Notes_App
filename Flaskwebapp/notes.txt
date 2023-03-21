@@ -9,3 +9,20 @@ views.py notes -->
 
 this file is a blueprint of our application --it has bunch of roots inside ie: urls .....we can find different views of our application in 
 different files rather than having them to find in one file(because it contains the urls to go to those views).
+
+HTTP REQUEST
+
+( reference of login and sign-up page ) 
+when we go to the url using the url bar it is the "get request" annd when we push the 
+submit button then it is the "post request" (now(after adding the string of requests
+to the auth.py file) the login and sign-up page do not throw error whereas they tend to reload. )
+
+FETCHING DATA USING post
+
+def login():
+    # return render_template("login.html",text="testing",user="ghosty")
+    data=request.form 
+    print(data)
+    return render_template("login.html")
+
+    request that was sent to access this route eg : some url , some method and in this case the form attribute of the request containing all the data sent as the part of the form 
