@@ -1,0 +1,41 @@
+1.Login example text for conditional statements in jinja templating
+
+***********
+
+{% extends "base.html" %} {% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+<h1>This is the Login page</h1>
+
+{% if boolean == True %}
+Yo bro
+
+{% else %}
+Nope Bro
+{% endif %}
+
+{% endblock %}
+
+***********
+
+
+
+2.base.html -->
+
+<title>{% block title %}Home{% endblock %}</title> 
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>  
+
+
+*--> the {% block title %}Home{% endblock %} and {% block content %}  {% endblock %} are two blocks defined in 'base.html'. NOTE - content written b/w the declaration of blocks is type=default ie: it can be overwritten.
+
+* These are then used in other files of the template folder to add the new title and body content respectively .
+
+
+
+
+
